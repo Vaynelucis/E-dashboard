@@ -4,6 +4,7 @@ import { Route, Link, BrowserRouter as Router } from "react-router-dom";
 
 import "./App.css";
 import Login from "./components/login.js";
+import Dashboard from "./components/dashboard.js";
 
 function App() {
   return (
@@ -14,7 +15,8 @@ function App() {
           <p>
             Edit <code>src/App.js</code> and save to reload.
             {/* <Login /> */}
-            <Route path="/" component={Login} />
+            <Route exact path="/" component={Login} />
+            <Route path="/dashboard" component={Dashboard} />
           </p>
           <a
             className="App-link"

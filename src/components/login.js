@@ -10,6 +10,9 @@ export default function Login(props) {
     console.log(userName);
     console.log(userPassword);
     console.log(props);
+    if (userName && userPassword) {
+      props.history.push("/dashboard");
+    }
   };
   return (
     <div>
