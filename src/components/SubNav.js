@@ -13,7 +13,7 @@ export default function subNav() {
           <option value="Completed">Completed</option>
           <option value="Incomplete">Incomplete</option>
         </select>
-        <input type="datetime" name="date" id="" className="subNavInput" />
+        <input type="date" name="date" id="" className="subNavInput" />
       </form>
       <button>
         <span>New Order</span>
