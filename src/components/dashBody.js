@@ -1,14 +1,38 @@
 import React, { useState, Component } from "react";
 
 export default function DashBody() {
-  const [products, setProducts] = useState({
-    code: "hpggg",
-    name: "Action Figure",
-    Instruction: "stock Adjustment",
-    status: "completed",
-    date: "20-08-2019",
-    quantity: 100
+  const [products, setProducts] = useState([
+    {
+      code: "hpggg",
+      name: "Action Figure",
+      Instruction: "stock Adjustment",
+      status: "completed",
+      date: "20-08-2019",
+      quantity: 100
+    },
+    {
+      code: "ndanfk",
+      name: "bang Action Figure",
+      Instruction: "stock Adjustment",
+      status: "Incomplete",
+      date: "20-08-2019",
+      quantity: 500
+    }
+  ]);
+
+  const loadedProducts = products.map(product => {
+    return (
+      <div className="grid-container-dash">
+        <h3 className="grid-item-heading"> {product.code} </h3>
+        <h3 className="grid-item-heading">{product.name}</h3>
+        <h3 className="grid-item-heading">{product.Instruction}</h3>
+        <h3 className="grid-item-heading">{product.status}</h3>
+        <h3 className="grid-item-heading">{product.date}</h3>
+        <h3 className="grid-item-heading">{product.quantity}</h3>
+      </div>
+    );
   });
+
   return (
     <div className="dashbody">
       <div className="grid-container-heading">
@@ -20,18 +44,7 @@ export default function DashBody() {
         <h3 className="grid-item-heading">Quantity</h3>
       </div>
 
-      {products ? (
-        <div className="grid-container-dash">
-          <h3 className="grid-item-heading"> {products.code} </h3>
-          <h3 className="grid-item-heading">{products.name}</h3>
-          <h3 className="grid-item-heading">{products.Instruction}</h3>
-          <h3 className="grid-item-heading">{products.status}</h3>
-          <h3 className="grid-item-heading">{products.date}</h3>
-          <h3 className="grid-item-heading">{products.quantity}</h3>
-        </div>
-      ) : (
-        <p>Empty Blood</p>
-      )}
+      {products ? loadedProducts : <p>Empty Blood</p>}
     </div>
   );
 }
