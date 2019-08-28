@@ -27,7 +27,29 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: minmax(150px, 0.5fr) 4fr;
+  background-color: aqua;
+  height: 100vh
+}
+
+.grid-container-heading {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr
+}
+
+.grid-item {}
+
+.menu {
+  background-color: blue;
+  padding: 20px;
+  margin: 0;
 }
