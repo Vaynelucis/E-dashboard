@@ -74,11 +74,24 @@ body {
 .subNav {
   display: flex;
   align-items: center;
+  background-color: beige;
+}
+
+.subNav form input {
+  /* display: flex; */
+  margin: 0 20px;
+}
+
+.subNav form label {
+  margin: 0 5px;
 }
 
 .addOrder {
-  flex-basis: 500px;
+  display: flex;
+  /* flex-basis: 500px; */
+  justify-content: flex-end;
   flex-grow: 8;
+  margin: 0 20px;
 }
 
 /* .subNav form  {
@@ -104,7 +117,8 @@ body {
   /* margin: 20px; */
 }
 
-.grid-item {}
+.grid-item {
+}
 
 .menu {
   background-color: blue;
