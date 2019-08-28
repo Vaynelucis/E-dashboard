@@ -76,6 +76,11 @@ body {
   align-items: center;
 }
 
+.addOrder {
+  flex-basis: 500px;
+  flex-grow: 8;
+}
+
 /* .subNav form  {
   align-items: center;
   justify-content: center
@@ -99,8 +104,7 @@ body {
   /* margin: 20px; */
 }
 
-.grid-item {
-}
+.grid-item {}
 
 .menu {
   background-color: blue;

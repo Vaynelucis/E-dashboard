@@ -15,10 +15,12 @@ export default function subNav() {
         </select>
         <input type="date" name="date" id="" className="subNavInput" />
       </form>
-      <button>
-        <span>New Order</span>
-        <span>+</span>
-      </button>
+      <div className="addOrder">
+        <button>
+          <span>New Order</span>
+          <span>+</span>
+        </button>
+      </div>
     </div>
   );
 }
