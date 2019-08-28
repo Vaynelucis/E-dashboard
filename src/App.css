@@ -38,12 +38,26 @@
   display: grid;
   grid-template-columns: minmax(150px, 0.5fr) 4fr;
   background-color: aqua;
+  /* height: 100vh */
   height: 100vh
 }
 
 .grid-container-heading {
   display: grid;
-  grid-template-columns: 0.5fr 2fr 1fr 1fr 1fr 1fr
+  grid-template-columns: 0.7fr 2fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 20px;
+
+}
+
+.grid-item-heading {
+  background-color: red;
+}
+
+.dashbody {
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: coral;
+  height: 94%;
 }
 
 .grid-item {}
