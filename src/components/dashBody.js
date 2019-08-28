@@ -1,4 +1,5 @@
 import React, { useState, Component } from "react";
+import SubNav from "./SubNav";
 
 export default function DashBody() {
   const [products, setProducts] = useState([
@@ -35,6 +36,7 @@ export default function DashBody() {
 
   return (
     <div className="dashbody">
+      <SubNav />
       <div className="grid-container-heading">
         <h3 className="grid-item-heading">Product Code</h3>
         <h3 className="grid-item-heading">Product</h3>

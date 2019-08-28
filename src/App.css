@@ -2,10 +2,16 @@
   /* text-align: center; */
   background-color: red;
   height: 100vh;
+  /* min-height: 100vh; */
+  /* max-height: 200vh; */
+  /* height: 100vh; */
+  /* height: 100%; */
 }
 
 body {
   background: #ccc;
+  /* height: 500px; */
+  /* height: 100vh; */
 }
 
 .App-logo {
@@ -39,7 +45,6 @@ body {
   }
 }
 
-
 .grid-container {
   display: flex;
   background-color: aqua;
@@ -52,12 +57,29 @@ body {
   display: grid;
   grid-template-columns: 0.7fr 2fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
-
 }
 
 .grid-item.dash {
-  padding: 20px;
+  /* padding: 20px; */
+  flex-grow: 8;
 }
+
+.menu {
+  flex-grow: 1;
+  height: 100%;
+  padding: 0px 20px;
+  /* margin: 50px */
+}
+
+.subNav {
+  display: flex;
+  align-items: center;
+}
+
+/* .subNav form  {
+  align-items: center;
+  justify-content: center
+} */
 
 .grid-item-heading {
   background-color: red;
@@ -70,10 +92,18 @@ body {
   height: 94%;
 }
 
-.grid-item {}
+.container {
+  display: flex;
+  height: 100%;
+  /* padding: 20px; */
+  /* margin: 20px; */
+}
+
+.grid-item {
+}
 
 .menu {
   background-color: blue;
-  padding: 20px;
-  margin: 0;
+  /* padding: 10px; */
+  /* margin: 0; */
 }
