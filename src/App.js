@@ -9,7 +9,7 @@ import Dashboard from "./components/dashboard.js";
 function App() {
   return (
     <Router>
-      <div>
+      <div className="App">
         <Route exact path="/" component={Login} />
         <Route path="/dashboard" component={Dashboard} />
       </div>

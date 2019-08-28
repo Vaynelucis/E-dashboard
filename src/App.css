@@ -1,5 +1,7 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  height: 100vh;
+  background-color: red
 }
 
 .App-logo {
@@ -42,12 +44,15 @@
   height: 100vh
 }
 
-.grid-container-heading {
+.grid-container-heading,
+.grid-container-dash {
   display: grid;
   grid-template-columns: 0.7fr 2fr 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
 
 }
+
+
 
 .grid-item-heading {
   background-color: red;
