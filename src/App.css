@@ -1,7 +1,11 @@
 .App {
   /* text-align: center; */
+  background-color: red;
   height: 100vh;
-  background-color: red
+}
+
+body {
+  background: #ccc;
 }
 
 .App-logo {
@@ -12,7 +16,7 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,11 +41,10 @@
 
 
 .grid-container {
-  display: grid;
-  grid-template-columns: minmax(150px, 0.5fr) 4fr;
+  display: flex;
   background-color: aqua;
-  /* height: 100vh */
-  height: 100vh
+  min-height: 100vh;
+  width: 100%;
 }
 
 .grid-container-heading,
@@ -52,14 +55,16 @@
 
 }
 
-
+.grid-item.dash {
+  padding: 20px;
+}
 
 .grid-item-heading {
   background-color: red;
 }
 
 .dashbody {
-  margin: 20px;
+  /* margin: 20px; */
   padding: 10px 20px;
   background-color: coral;
   height: 94%;
