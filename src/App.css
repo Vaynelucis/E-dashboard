@@ -2,6 +2,7 @@
   /* text-align: center; */
   background-color: red;
   height: 100vh;
+  overflow: auto;
   /* min-height: 100vh; */
   /* max-height: 200vh; */
   /* height: 100vh; */
@@ -117,8 +118,7 @@ body {
   /* margin: 20px; */
 }
 
-.grid-item {
-}
+.grid-item {}
 
 .menu {
   background-color: blue;
