@@ -139,10 +139,11 @@ body {
   display: flex;
   flex: 1;
   justify-content: flex-end;
+  /* flex-wrap: nowrap; */
   margin: 0 20px;
 }
 
-.navAside a {
+.nav a {
   margin: 0 10px;
 }
 
