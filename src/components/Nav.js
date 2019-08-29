@@ -29,6 +29,25 @@ export default function Nav() {
         {" "}
         <span></span> Reports
       </NavLink>
+
+      <div className="navAside">
+        <NavLink>
+          <span>search</span>
+        </NavLink>
+        <NavLink>
+          <span>Notification</span>
+        </NavLink>
+        <NavLink>
+          <span>profile pic</span>
+        </NavLink>
+        <NavLink>
+          <select name="profile" id="">
+            <option value="Profile">Profile</option>
+            <option value="Settings">Settings</option>
+            <option value="Logout">Logout</option>
+          </select>
+        </NavLink>
+      </div>
     </div>
   );
 }
